@@ -5,3 +5,14 @@
 (или 0, 3, 4, 5 - если индексация начинается с нуля),
 т.к. именно в этих позициях первого массива стоят четные числа.
 """
+
+from random import random
+N = 10
+arr = [0]*N
+even = []
+for i in range(N):
+    arr[i] = int(random() * 10) + 10
+    if arr[i] % 2 == 0:
+        even.append(i)
+print(arr)
+print('Индексы четных элементов: ', even)
